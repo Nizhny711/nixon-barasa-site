@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600;700&display=swap');
+
+:root {
+  --primary-color: #0077ff;
+  --accent-color: #00c6ae;
+  --bg-color: #f2f7f8;
+  --text-color: #2c2c2c;
+  --card-bg: #ffffff;
+}
+
+body {
+  margin: 0;
+  font-family: 'IBM Plex Sans', sans-serif;
+  background: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+header {
+  padding: 60px 20px;
+  text-align: center;
+  background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+  color: white;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+
+header p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+section {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: var(--card-bg);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: var(--primary-color);
+}
+
+p {
+  font-size: 1rem;
+  color: #444;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.contact a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-color);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact a:hover {
+  transform: scale(1.15);
+  background-color: var(--primary-color);
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  filter: invert(20%) sepia(100%) saturate(500%) hue-rotate(190deg);
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #999;
+  font-size: 0.9rem;
+  margin-top: 30px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 2.2rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  section {
+    margin: 20px 15px;
+    padding: 15px;
+  }
+
+  .contact a {
+    width: 45px;
+    height: 45px;
+  }
+
+  .icon {
+    width: 22px;
+    height: 22px;
+  }
+}
+.testimonial {
+    background: linear-gradient(135deg, #e0f7ff, #dffcf5);
+    padding: 20px 25px;
+    border-left: 5px solid var(--primary-color);
+    border-radius: 10px;
+    margin-top: 15px;
+  }
+  
+  .testimonial p {
+    font-style: italic;
+    color: #333;
+    font-size: 1rem;
+    margin: 0 0 10px;
+  }
+  
+  .author {
+    font-weight: 600;
+    color: var(--accent-color);
+    font-size: 0.95rem;
+  }
+  
